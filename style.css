@@ -109,7 +109,7 @@ a.middle:hover:before {
     align-items: center;
 }
 #mobilewhite{
-    height:700px;
+    height:80%;
     
 }
 .txtframe{
@@ -131,6 +131,7 @@ a.middle:hover:before {
     border-radius: 10px;
     border:2px solid #404040;
     cursor:pointer;
+    font-family: 'Lato', sans-serif;
 }
 #download:hover{
     background:#404040;
