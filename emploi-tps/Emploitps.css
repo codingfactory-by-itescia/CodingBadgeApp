@@ -1,0 +1,26 @@
+#mainflex
+{
+	display: flex;
+	flex-direction: column;
+}
+#date
+{
+	display: flex;
+	justify-content: center;
+}
+
+#newevent
+{
+	width: 10%;
+	align-self: flex-end;
+}
+
+#divNewEvent
+{
+	display: none;
+}
+
+#erreur
+{
+	color: red;
+}
