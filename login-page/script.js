@@ -10,7 +10,7 @@ function displayPage(page){
 function validateLogin(){
     let identifiant = $("#unmame").val();
     let password = $("#password").val();
-    if(identifiant == 'root' || password == 'root'){
+    if(identifiant == 'root' && password == 'root'){
         window.location = "../index.html";
     } else{
         $('#unmame').css("border-bottom","2px solid #ff0000");
