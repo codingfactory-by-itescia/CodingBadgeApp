@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Login Page</title>
-	<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="container">
-            <div class="header">
-                <div class="title color">
-                    <img src="img/codinglogo.png" id="codinglogo" alt="Logo Coding Factory" onclick="displayPage('home')"/>
-                    <h1 onclick="displayPage('home')">Mobile Factory</h1>
-                </div>
-                <div class="media color">
-                    <div class="login">
-                        <h4 id="log" onclick="displayPage('signin')">Connectez-vous!</h4>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="frame">
-                <div id="home">
-                    <div class="imagephone">
-                        <img src="img/AppMobile.png" id="mobilewhite" alt="Image Application Mobile">
-                    </div>
-                    <div class="txtframe">
-                        <h1>La Coding Factory, partout avec vous.</h1>
-                        <button id="download">Download Now!</button>
-                    </div>
-                </div>
-                <div id="signin">
-                    <div class="infos"><h3>Connectez vous pour accéder aux informations concernant la Coding !</h3></div>
-                    <form>
-                        <div class="end-frame">
-                            <label for="uname"><b>Identifiant</b></label>
-                            <input type="text" placeholder="Entrez votre identifiant" name="uname" required id="unmame">
 
-                            <label for="psw"><b>Mot de Passe</b></label>
-                            <input type="password" placeholder="Entrez votre mot de passe" name="psw" required id="password">
-                            <span class="psw">Mot de passe <a href="#">oublié ?</a></span>
-                        </div>
-                    </form>
-                    <button id="valid" onclick="validateLogin()">Login</button>
+<head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title color">
+                <img src="img/codinglogo.png" id="codinglogo" alt="Logo Coding Factory" onclick="displayPage('home')" />
+                <h1 onclick="displayPage('home')">Mobile Factory</h1>
+            </div>
+            <div class="media color">
+                <div class="login">
+                    <h4 id="log" onclick="displayPage('signin')">Connectez-vous!</h4>
                 </div>
+
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <div class="frame">
+            <div id="home">
+                <div class="imagephone">
+                    <img src="img/AppMobile.png" id="mobilewhite" alt="Image Application Mobile">
+                </div>
+                <div class="txtframe">
+                    <h1>La Coding Factory, partout avec vous.</h1>
+                    <button id="download">Download Now!</button>
+                </div>
+            </div>
+            <div id="signin">
+                <div class="infos">
+                    <h3>Connectez vous pour accéder aux informations concernant la Coding !</h3>
+                </div>
+                <form>
+                    <div class="end-frame">
+                        <label for="uname"><b>Identifiant</b></label>
+                        <input type="text" placeholder="Entrez votre identifiant" name="uname" required id="unmame">
+
+                        <label for="psw"><b>Mot de Passe</b></label>
+                        <input type="password" placeholder="Entrez votre mot de passe" name="psw" required
+                            id="password">
+                        <span class="psw">Mot de passe <a href="#">oublié ?</a></span>
+                    </div>
+                </form>
+                <button id="valid" onclick="validateLogin()">Login</button>
+            </div>
+        </div>
+    </div>
+    <canvas id="qr-code"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
-	</body>
+</body>
+
 </html>

@@ -10,8 +10,9 @@ function displayPage(page){
 function validateLogin(){
     let identifiant = $("#unmame").val();
     let password = $("#password").val();
-    if(identifiant == 'root' && password == 'root'){
+    if(identifiant == 'matthieu' && password == 'root'){
         window.location = "admin-page/index.html";
+        generateQRCode()
     } else{
         $('#unmame').css("border-bottom","2px solid #ff0000");
         $('#password').css("border-bottom","2px solid #ff0000");
@@ -20,4 +21,26 @@ function validateLogin(){
             $('#password').css("border-bottom","2px solid #404040");
         },500);
     }
+}
+
+
+
+
+var qr;
+(function () {
+    qr = new QRious({
+        element: document.getElementById('qr-code'),
+        size: 200,
+        value: 'https://studytonight.com'
+    });
+})();
+
+function generateQRCode() {
+    var qrtext = $("#unmame").val();
+    let id = localStorage.setItem("id",qrtext);
+    qr.set({
+        foreground: 'black',
+        size: 200,
+        value: qrtext
+    });
 }
