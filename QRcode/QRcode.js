@@ -1,5 +1,5 @@
 let id = localStorage.getItem("id");
-let user = document.getElementById("test");
+let user = document.getElementById("qr-result");
 
 var qr;
 (function () {

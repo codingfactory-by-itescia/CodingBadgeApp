@@ -101,40 +101,11 @@ a.middle:hover:before {
     justify-content: center;
     align-items: center;
 }
-.imagephone{
+.center{
     display:flex;
     height: 100%;
     width: 30%;
     justify-content: center;
     align-items: center;
-}
-#mobilewhite{
-    height:80%;
-    
-}
-.txtframe{
-    display:flex;
     font-family: 'Lato', sans-serif;
-    height:100%;
-    width: 30%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:#404040;
-    
-}
-#download{
-    height:7%;
-    width: 30%;
-    background:none;
-    outline:none;
-    border-radius: 10px;
-    border:2px solid #404040;
-    cursor:pointer;
-    font-family: 'Lato', sans-serif;
-}
-#download:hover{
-    background:#404040;
-    color:white;
-    transition-duration: 350ms;
 }

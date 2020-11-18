@@ -10,7 +10,8 @@ function displayPage(page){
 function validateLogin(){
     let identifiant = $("#unmame").val();
     let password = $("#password").val();
-    if(identifiant == 'matthieu' && password == 'root'){
+    if(identifiant == 'admin' && password == 'admin'){
+        localStorage.setItem("user",identifiant);
         window.location = "admin-page/index.html";
         generateQRCode()
     } else{
@@ -22,9 +23,6 @@ function validateLogin(){
         },500);
     }
 }
-
-
-
 
 var qr;
 (function () {
