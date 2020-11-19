@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body,html{
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+    height:100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+.color{
+    color:#404040;
+}
+.title{
+    display:flex;
+    height:100%;
+    width: 15%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+}
+#codinglogo{
+    height:40px;
+    width: 40px;
+    margin-right: 5%;
+}
+.media{
+    display:flex;
+    height:100%;
+    width: 40%;
+    justify-content:space-around;
+    align-items: center;
+}
+h4{
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+    color:#404040;
+}
+a.middle
+{
+    position: relative;
+    
+}
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  bottom: -7px;
+  background-color: #404040;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.switcher{
+    display:flex;
+    height:10%;
+    width: 8%;
+    border-radius: 30px;
+    background-color:#404040;
+    align-items: center;
+}
+#toggleswitch{
+    display:flex;
+    height:80%;
+    width: 30%;
+    margin-left: 5%;
+    border-radius: 50px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+#sun-moon{
+    height:10px;
+    width: 10px;
+}
+.header{
+    display:flex;
+    height:20%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+.actu{
+    display:flex;
+    height:80%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+#acturesume{
+    display:flex;
+    height: auto;
+    width: 80%;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(0, 0, 0, 0.1);
+    margin-top: 2%;
+    cursor:pointer;
+}
+#actudeveloppe{
+    display: none;
+    height: auto;
+    width: 80%;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(0, 0, 0, 0.1);
+    margin-top: 2%;
+    cursor:pointer;
+}
+#tournoiLOL{
+    width: 250px;
+    height: 250px;
+}
+.actudescription{
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+}
+.text{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2%;
+}
+#inscrip{
+    margin-bottom: 2%;
+}

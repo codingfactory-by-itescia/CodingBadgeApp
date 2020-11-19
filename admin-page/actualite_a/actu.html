@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Mobile Factory - Actualités</title>
+        <link rel="stylesheet" href="actu.css">
+	</head>
+	<body>
+        <div class="container">
+            <div class="header">
+                <div class="title color">
+                    <img src="../../img/codinglogo.png" id="codinglogo" alt="Logo Coding Factory"/>
+                    <h1>Mobile Factory</h1>
+                </div>
+                <div class="media color">
+                    <h4 id="qrcode"><a href="../QRcode_a/QRcode_a.php" class="middle">QR Code</a></h4> 
+                    <h4 id="emploitps"><a href="../emploi-tps-a/Emploitps_a.php" class="middle">Emploi du temps</a></h4>
+                    <h4 id="actus"><a href="" class="middle">Actualités</a></h4> 
+                    <h4 id="profil"><a href="../profil_a/profil_a.php" class="middle">Profil</a></h4> 
+                    <h4 id="contacts"><a href="../contact_a/contact_admin.php" class="middle">Contacts</a></h4> 
+                </div>
+            </div>
+            <div class="actu">
+                <div id="acturesume" onclick="displayElem('acturesume', 'actudeveloppe')">
+                    <h2>Tournoi League of Legends : Lundi 23 novembre</h2>
+                </div>
+                <div id="actudeveloppe" onclick="displayElem('actudeveloppe', 'acturesume')">
+                    <img src="../../img/tournoiLOL.png" id="tournoiLOL" alt="affiche du tournoi lol">
+                    <div class="text">
+                        <p class="actudescription">Le 23 Novembre à 19h 🕖 Préparez vos champions, votre stuff et votre team (composée de 2 itescien(e)s minimum) pour vous affronter et tenter de gagner le Skin de votre choix (max. 1820 RP) !</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSelyA5eBH8vJPTBg2peBG124kg3By-dM3WLb_5YFuNhGLK9rA/viewform" id="inscrip" class="middle">Inscription</a>
+                    </div>
+                </div>	
+            </div>
+        </div>    
+    </body>
+<script type="text/javascript" src="actu.js"></script>
+</html>
